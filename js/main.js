@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   let member = JSON.parse(sessionStorage.getItem("member"));
   const sessionUser = JSON.parse(sessionStorage.getItem("user"));
-
   // 세션유무에 따른 메뉴바 처리
   let isLogin = false;
   const menuBar = document.querySelector("nav.cyy_nav");
@@ -41,9 +40,4 @@ document.addEventListener("DOMContentLoaded", () => {
       document.location.href = "/index.html";
     }
   });
-
-  // 과거코드 지워 된다고 함. 혹시몰라서.
-  const gj_map = document.querySelector("area[title='gj_map']");
-  const main_intro = document.querySelector(".main_intro");
-  // main_intro.addEventListener("mouseenter", (main_intro.style.color = "red"));
 });
